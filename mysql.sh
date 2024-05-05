@@ -11,7 +11,7 @@ N="\[0m"
 echo "Please enter the password:"
 read -e mysql_root_password
 
-VALIDATE={
+VALIDATE(){
   if [ $1 -ne 0 ]
   then
     echo -e"$2..$R FAILURE $N"
